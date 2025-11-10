@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  color: white;
+  overflow-x: hidden;
+  /* Layered gradients for depth */
+  background:
+    /* Soft spotlight blue to dark */
+    radial-gradient(ellipse 60% 40% at 35% 30%, #00bfff33 0%, transparent 80%),
+    /* Silvery white glow from right */
+    radial-gradient(ellipse 50% 35% at 100% 50%, #e9e9ef18 0%, transparent 90%),
+    /* Dark blur overlay */
+    linear-gradient(125deg,#111217 0%, #222228 100%);
+  /* Subtle grain texture for pro feel */
+  position: relative;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  opacity: 0.08;
+  mix-blend-mode:soft-light;
+}
+
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+  word-break: break-word;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+button,
+.button-link {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-family: inherit;
+  display: inline-block;
+  text-align: center;
+}
+button:hover,
+.button-link:hover {
+  background: #0090cc;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+#contact {
+  margin-bottom: 2.5rem !important;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  section {
+    margin: 2rem 0;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
+  #contact {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 0.5rem;
+    max-width: 99vw;
+  }
+  section {
+    margin: 1.2rem 0;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  button,
+  .button-link {
+    width: 95vw;
+    font-size: 0.95rem;
+    padding: 0.7rem 0.5rem;
+  }
+}
