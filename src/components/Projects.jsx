@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Car Price Prediction using ML",
     desc: "A machine learning project that predicts car resale prices based on various features. Built with Python, Flask backend, and deployed using HTML5 & CSS3 frontend.",
-    github: "https://github.com/yourusername/car-price-prediction",
+    github: "https://github.com/YScoder123too/Car-Price-Predictor-App",
     tech: [
       { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
       { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
